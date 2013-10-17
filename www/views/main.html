@@ -1,9 +1,12 @@
 Testing 2
 <div ng-controller="MainCtrl">
-	<ul>
-		<li ng-repeat="thing in awesomeThings">{{thing}}</li>
-	</ul>
-	
+	<style>
+		input[type=checkbox]
+		{
+		  -webkit-transform: scale(.7); /* Safari and Chrome */
+		}
+	</style>
+
 	<table>
 		<tr ng-repeat="i in [] | range:4">
 			<td ng-repeat="j in [] | range:16">
@@ -11,5 +14,7 @@ Testing 2
 			</td>
 		</tr>
 	</table>
+	
+	
 	{{pattern}}
 </div>
