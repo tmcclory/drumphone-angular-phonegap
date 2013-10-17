@@ -20,7 +20,7 @@ wwwApp.controller('MainCtrl', function($scope) {
   }
 
   setupPattern();
-  setTimeout(initialize, 3000);
+  setTimeout(initialize, 6000);
   
   var beat = 0;
   var tempo = 100;
