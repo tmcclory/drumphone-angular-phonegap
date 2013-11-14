@@ -8,12 +8,20 @@ Drum Phone
 	</style>
 
 	<table>
-		<tr ng-repeat="i in [] | range:4">
+		<tr ng-repeat="i in [] | range:12">
 			<td ng-repeat="j in [] | range:16">
 				<input type="checkbox" ng-model="pattern[i][j]">
 			</td>
 		</tr>
 	</table>
+	
+	<table>
+    <tr ng-repeat="i in [] | range:12">
+      <td ng-repeat="j in [] | range:16">
+        <input type="checkbox" ng-model="pattern[i][j]">
+      </td>
+    </tr>
+  </table>
 	
 	<button ng-click="play()">Play</button>
 	<button ng-click="stop()">Stop</button>

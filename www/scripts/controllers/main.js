@@ -30,7 +30,8 @@ wwwApp.controller('MainCtrl', function($scope) {
   	var i=0;
   	for(i=0;i<4;i+=1) {
   		if($scope.pattern[i][beat]) {
-  			LowLatencyAudio.play(notes[i]);
+  		  playSample(i+24,.45)
+  			//LowLatencyAudio.play(notes[i]);
   		}
   	}
   	beat=(beat+1)%16
